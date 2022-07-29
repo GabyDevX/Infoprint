@@ -1,9 +1,16 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
 
 .navbar-collapse {
   justify-content: flex-end; }
@@ -45,3 +52,79 @@
     justify-content: space-between;
     text-align: center;
     color: #0667ae; }
+
+/* SECCIÓN CONTACTO */
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .contacto h2 {
+    font-weight: bold; }
+  .contacto__formulario {
+    width: 40%; }
+    .contacto__formulario .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 90%; }
+      .contacto__formulario .formulario input {
+        border-color: #0667ae; }
+      .contacto__formulario .formulario .contenedor-inputs {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px; }
+        .contacto__formulario .formulario .contenedor-inputs input {
+          width: 50%; }
+      .contacto__formulario .formulario .btn {
+        width: 80px;
+        align-self: flex-end;
+        background-color: #0667ae; }
+      .contacto__formulario .formulario textarea {
+        resize: none;
+        border-color: #0667ae; }
+  .contacto__datos {
+    width: 30%; }
+    .contacto__datos .contacto__separador {
+      border: 2px solid #0667ae; }
+    .contacto__datos p {
+      width: 70%; }
+    .contacto__datos .redes {
+      gap: 10px;
+      display: flex;
+      padding-left: 0; }
+      .contacto__datos .redes .fa-brands {
+        font-size: 2rem;
+        color: #0667ae; }
+
+/* SECCION FOOTER */
+footer {
+  background-color: #0667ae;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 40px;
+  padding: 2rem; }
+  footer .footer-map {
+    display: flex;
+    justify-content: space-between;
+    width: 60%; }
+    footer .footer-map .footer-brand {
+      width: 200px;
+      height: 80px; }
+    footer .footer-map .footer-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      footer .footer-map .footer-links li a {
+        color: white; }
+  footer .footer-redes {
+    display: flex; }
+    footer .footer-redes ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 40%;
+      gap: 20px; }
+    footer .footer-redes .fa-brands {
+      font-size: 2rem;
+      color: white; }

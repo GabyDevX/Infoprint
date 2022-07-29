@@ -1,279 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Infoprint</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/LOGO.png" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./img/Pruebacolor1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/Pruebacolor1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/Pruebacolor1.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <div class="separadorHero"></div>
-      <section class="nosotros">
-        <article class="nosotros__imgContainer">
-          <img src="./img/Imprenta-1.jpg" alt="nosotrosImg" />
-        </article>
-        <article class="nosotros__texto">
-          <div>
-            <p>
-              InfoPrint fue creado con el propósito y finalidad de atender los
-              requerimientos de todo tipo de impresiones dirigidos a las
-              necesidades de las personas y empresas. Nos apasiona hacer y
-              realizar trabajos de impresiones en cualquier tipo de material y
-              que el cliente esté completamente a gusto y satisfecho con su
-              trabajo impreso.
-            </p>
 
-            <p>
-              Más de 20 años con el mismo propósito y misión: cubrir las
-              necesidades impresas de todo tipo de Empresas y Personas.
-            </p>
-            <p class="nosotros__texto--right">conozca mas</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/6405feee34.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Infoprint</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/LOGO.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Pruebacolor1.jpg" class="d-block w-100" alt="..." />
           </div>
-          <ul>
-            <li>
-              <div class="nosotros__iconos">
-                <img src="./img/excelencia.png" alt="iconosNosotros" />
-                <p>Excelencia</p>
-              </div>
-            </li>
-            <li>
-              <div class="nosotros__iconos">
-                <img src="./img/puntualidad.png" alt="iconosNosotros" />
-                <p>Puntualidad</p>
-              </div>
-            </li>
-            <li>
-              <div class="nosotros__iconos">
-                <img src="./img/cercania.png" alt="iconosNosotros" />
-                <p>Cercanía</p>
-              </div>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section class="servicios">
-        <article class="servicios__card">
-          <img src="" alt="servicios__img" />
-          <h2>Titulo Servicio</h2>
-          <p>Ver Trabajos ></p>
-        </article>
-        <article class="servicios__card">
-          <img src="" alt="servicios__img" />
-          <h2>Titulo Servicio</h2>
-          <p>Ver Trabajos ></p>
-        </article>
-        <article class="servicios__card">
-          <img src="" alt="servicios__img" />
-          <h2>Titulo Servicio</h2>
-          <p>Ver Trabajos ></p>
-        </article>
-      </section>
-      <section class="clientes">
-        <h2>Confían en nosotros</h2>
-        <article class="clientes__slider">
-          <ul>
-            <img src="" alt="clienteLogo" />
-            <img src="" alt="clienteLogo" />
-            <img src="" alt="clienteLogo" />
-            <img src="" alt="clienteLogo" />
-            <img src="" alt="clienteLogo" />
-          </ul>
-        </article>
-      </section>
-      <section class="contacto">
-        <article class="contacto__formulario">
-          <h2>Contactenos</h2>
-          <form action="">
-            <input type="text" name="nombre" placeholder="Nombre" id="" />
-            <input type="email" name="correo" placeholder="Correo" id="" />
-            <input type="text" name="telefono" placeholder="Telefono" id="" />
-            <textarea
-              name="mensaje"
-              placeholder="Mensaje"
-              name="mensaje"
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </article>
-        <article class="contacto__datos">
-          <h2>Dirección</h2>
+          <div class="carousel-item">
+            <img src="./img/Pruebacolor1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Pruebacolor1.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <div class="separadorHero"></div>
+    <section class="nosotros">
+      <article class="nosotros__imgContainer">
+        <img src="./img/Imprenta-1.jpg" alt="nosotrosImg" />
+      </article>
+      <article class="nosotros__texto">
+        <div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-            accusantium, labore explicabo doloribus aut dignissimos rerum unde
-            culpa suscipit quaerat quisquam ipsa reiciendis, maxime laboriosam
-            facere officia molestias accusamus aperiam.
+            InfoPrint fue creado con el propósito y finalidad de atender los
+            requerimientos de todo tipo de impresiones dirigidos a las
+            necesidades de las personas y empresas. Nos apasiona hacer y
+            realizar trabajos de impresiones en cualquier tipo de material y
+            que el cliente esté completamente a gusto y satisfecho con su
+            trabajo impreso.
           </p>
-          <div class="contacto__separador"></div>
-          <h2>Teléfonos</h2>
+
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-            accusantium, labore explicabo doloribus aut dignissimos rerum unde
-            culpa suscipit quaerat quisquam ipsa reiciendis, maxime laboriosam
-            facere officia molestias accusamus aperiam.
+            Más de 20 años con el mismo propósito y misión: cubrir las
+            necesidades impresas de todo tipo de Empresas y Personas.
           </p>
-          <div class="contacto__separador"></div>
-          <h2>Correo</h2>
-          <p>
-            correo@correo.com
-          </p>
-          <div class="contacto__separador"></div>
-          <h2>Redes</h2>
-          <ul>
-            <li>
-              <a href="#"><img src="" alt="Linkedin" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="" alt="Facebook" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="" alt="Instagram" /></a>
-            </li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <img src="" alt="infoPrint" />
-      <ul>
+          <p class="nosotros__texto--right">conozca mas</p>
+        </div>
+        <ul>
+          <li>
+            <div class="nosotros__iconos">
+              <img src="./img/excelencia.png" alt="iconosNosotros" />
+              <p>Excelencia</p>
+            </div>
+          </li>
+          <li>
+            <div class="nosotros__iconos">
+              <img src="./img/puntualidad.png" alt="iconosNosotros" />
+              <p>Puntualidad</p>
+            </div>
+          </li>
+          <li>
+            <div class="nosotros__iconos">
+              <img src="./img/cercania.png" alt="iconosNosotros" />
+              <p>Cercanía</p>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="servicios">
+      <article class="servicios__card">
+        <img src="" alt="servicios__img" />
+        <h2>Titulo Servicio</h2>
+        <p>Ver Trabajos ></p>
+      </article>
+      <article class="servicios__card">
+        <img src="" alt="servicios__img" />
+        <h2>Titulo Servicio</h2>
+        <p>Ver Trabajos ></p>
+      </article>
+      <article class="servicios__card">
+        <img src="" alt="servicios__img" />
+        <h2>Titulo Servicio</h2>
+        <p>Ver Trabajos ></p>
+      </article>
+    </section>
+    <section class="clientes">
+      <h2>Confían en nosotros</h2>
+      <article class="clientes__slider">
+        <ul>
+          <img src="" alt="clienteLogo" />
+          <img src="" alt="clienteLogo" />
+          <img src="" alt="clienteLogo" />
+          <img src="" alt="clienteLogo" />
+          <img src="" alt="clienteLogo" />
+        </ul>
+      </article>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+
+    <section class="contacto">
+      <article class="contacto__formulario">
+        <h2>Contactenos</h2>
+        <form class="formulario " action="">
+          <input class="form-control" type="text" name="nombre" placeholder="Nombre" id="" />
+          <div class="contenedor-inputs">
+            <input class="form-control" type="email" name="correo" placeholder="Correo" id="" />
+            <input class="form-control" type="text" name="telefono" placeholder="Telefono" id="" />
+          </div>
+          <textarea class="form-control" name="mensaje" placeholder="Mensaje" name="mensaje" id="" cols="30"
+            rows="10"></textarea>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </article>
+      <article class="contacto__datos">
+        <h2>Dirección</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+          accusantium, labore explicabo doloribus aut dignissimos rerum unde
+        </p>
+        <hr class="contacto__separador">
+        </hr>
+        <h2>Teléfonos</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+        </p>
+        <hr class="contacto__separador">
+        </hr>
+        <h2>Correo</h2>
+        <p>correo@correo.com</p>
+        <hr class="contacto__separador">
+        </hr>
+        <h2>Redes</h2>
+        <ul class="redes">
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-facebook"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-square-instagram"></i>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-map">
+      <img class="footer-brand" src="./img/LOGO-BLANCO.png" alt="infoPrint" />
+      <ul class="footer-links">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
       <ul>
-        <li>
-          <a href="#"><img src="" alt="Linkedin" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="" alt="Facebook" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="" alt="Instagram" /></a>
-        </li>
+    </div>
+    <div class="footer-redes">
+      <ul>
+      <li>
+        <i class="fa-brands fa-linkedin"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-square-facebook"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-square-instagram"></i>
+      </li>
       </ul>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
