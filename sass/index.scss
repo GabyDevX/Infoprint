@@ -39,6 +39,7 @@ a {
 
     & img {
       width: 100%;
+      border-radius: 2rem;
     }
   }
 
@@ -75,6 +76,85 @@ a {
       height: auto;
       width: 90px;
     }
+  }
+}
+
+.servicios {
+  height: 360px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  &__card {
+    width: 30%;
+  }
+  &--right {
+    align-self: flex-end;
+  }
+  &__img1 {
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: url('../img/Servicios1.png');
+  }
+  &__img2 {
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: url('../img/Servicios2.png');
+  }
+  &__img3 {
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: url('../img/Servicios3.png');
+  }
+  &__text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+    background-color: rgba(5, 104, 151, 1);
+    background-image: url('../img/Rectangle1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  &__text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+    background-color: rgba(137, 5, 93, 1);
+    background-image: url('../img/Rectangle2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  &__text3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+    background-color: rgba(197, 185, 5, 1);
+    background-image: url('../img/Rectangle3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 }
 
