@@ -129,12 +129,42 @@ a {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; }
 
+/*SECCIÓN NOSOTROS*/
+.team {
+  max-width: 1080px;
+  margin: 100px auto 50px; }
+
+.team-title {
+  margin-bottom: 5rem; }
+
+.team-text {
+  font-size: 1.2em; }
+
+.blue-text {
+  color: #0667ae;
+  font-weight: bold; }
+
+.bold-text {
+  font-weight: bold; }
+
+.team-members {
+  display: flex;
+  justify-content: space-evenly; }
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.img-team {
+  width: 200px; }
+
 /* SECCIÓN CONTACTO */
 .contacto {
+  max-width: 1080px;
+  margin: 10rem auto 10rem;
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 100px; }
+  justify-content: space-between; }
   .contacto h2 {
     font-weight: bold; }
   .contacto__formulario {
@@ -160,7 +190,7 @@ a {
         resize: none;
         border-color: #0667ae; }
   .contacto__datos {
-    width: 30%; }
+    width: 40%; }
     .contacto__datos .contacto__separador {
       border: 2px solid #0667ae; }
     .contacto__datos p {
@@ -208,12 +238,10 @@ footer {
 
 /* SECCION CLIENTES */
 .clientes {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  max-width: 1080px;
+  margin: 0 auto 50px; }
 
 .clientes__titulo {
-  display: flex;
-  justify-content: space-evenly;
   margin-bottom: 60px; }
   .clientes__titulo h2 {
     font-weight: bold; }
