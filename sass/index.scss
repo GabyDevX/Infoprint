@@ -53,6 +53,15 @@ a {
     padding-top: 2rem;
     &--right {
       float: right;
+      background-color: transparent;
+      border: none;
+      font-weight: bold;
+      .conozca-mas{
+        color: black;
+        &:hover{
+          text-decoration: none;
+        }
+      }
     }
 
     & ul {
@@ -79,6 +88,7 @@ a {
   }
 }
 
+/* SERVICIOS */
 
 .servicios {
   height: 360px;
@@ -90,6 +100,13 @@ a {
   }
   &--right {
     align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+  }
+  &__title{
+    font-weight: bold;
+    color: black;
   }
   &__img1 {
     height: 60%;
@@ -186,9 +203,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.img-team{
-  width: 200px;
-}
+
 
 
 /* SECCIÓN CONTACTO */
@@ -318,4 +333,56 @@ footer {
   h2 {
     font-weight: bold;
   }
+}
+
+/* MODAL */
+.modal-container {
+  display: flex;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  background-color: white;
+  color: white;
+  max-width: 35rem;
+  max-height: 100rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  border-radius: 40px;
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(108%);
+}
+.nombre-producto{
+  color: black;
+  text-align: center;
+}
+.button-close{
+  background-color: transparent;
+  border: none;
+  width: max-content;
+  align-self:flex-end;
+}
+.fa-solid{
+  font-size: 20px;
 }
