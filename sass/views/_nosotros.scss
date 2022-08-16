@@ -79,6 +79,37 @@
     }
   }
 }
+
+/*SECCIÓN NOSOTROS*/
+.team {
+  max-width: 1080px;
+  margin: 100px auto 50px;
+}
+.team-title {
+  margin-bottom: 5rem;
+}
+.team-text {
+  font-size: 1.2em;
+}
+.blue-text {
+  color: $principal-color;
+  font-weight: bold;
+}
+.bold-text {
+  font-weight: bold;
+}
+.team-members {
+  display: flex;
+  justify-content: space-evenly;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-team {
+  width: 200px;
+}
 @media screen and (max-width: 900px) {
   .nosotros p {
     font-size: 0.8rem;

@@ -31,13 +31,13 @@
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -125,34 +125,82 @@
 
     <!-- Seccion servicios -->
 
-    <section class="servicios">
+    <section class="servicios" id="servicios">
       <article class="servicios__card">
         <div class="servicios__img1"></div>
-        <div class="servicios__text__container servicios__text1">
-          <h2>IMPRESIÓN  DIGITAL</h2>
-          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor</p>
+        <div class="servicios__text1">
+          <h2>IMPRESIÓN DIGITAL</h2>
+          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor</p>
           <p class="servicios--right">Ver Trabajos ></p>
         </div>
       </article>
       <article class="servicios__card">
         <div class="servicios__img2"></div>
-        <div class="servicios__text__container servicios__text2">
+        <div class="servicios__text2">
           <h2>IMPRESIÓN OFFSET</h2>
-          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor</p>
+          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor</p>
           <p class="servicios--right">Ver Trabajos ></p>
         </div>
       </article>
       <article class="servicios__card">
         <div class="servicios__img3"></div>
-        <div class="servicios__text__container servicios__text3">
+        <div class="servicios__text3">
           <h2>MERCHANDISING</h2>
-          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit, sed do eiusmod tempor</p>
+          <p class="servicios__descripcion">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor</p>
           <p class="servicios--right">Ver Trabajos ></p>
         </div>
       </article>
+    </section>
+
+    <!-- Sección nosotros -->
+    <section class="team" id="nosotros">
+      <h2 class="bold-text team-title">La empresa</h2>
+      <div class="team-text">
+        <p><span class="blue-text">InfoPrint</span> es una empresa familiar desde hace mas de 20 años. Seguimos con el
+          mismo propósito y misión de cubrir
+          las necesidades de todo tipo de <span class="bold-text">Empresas y Personas.</span>Nos apaciona producir y
+          aplicar nuestra
+          experiencia para realizar trabajos impresos en cualquier tipo de material.</p>
+        <p>La calidad es importante, pero que el cliente esté satisfecho y a gusto con los resultados, también es
+          prioridad.</p>
+        <p>Nuestro ADN se construye a partir de tres premisas fundamentales <span class="blue-text">Excelencia,
+            Puntualidad</span> y <span class="blue-text">Cercanía</span>.
+          Porque trabajamos con materiales de <span class="bold-text">óptmia calidad</span> cuidando al máximos <span
+            class="bold-text">tu tiempo</span> y
+          atendiendo a cada proyecto de forma <span class="bold-text">personalizada.</span>
+        </p>
+      </div>
+    </section>
+    <section class="team">
+      <h2 class="bold-text">Equipo</h2>
+      <div class="team-members">
+        <div class="member">
+          <img class="img-team" src="./img/perfil-avatar-mujer-icono-redondo_24640-14047.webp" alt="">
+          <h3 class="blue-text">Julia Arriola</h3>
+          <p>Administración</p>
+        </div>
+        <div class="member">
+          <img class="img-team" src="./img/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="">
+          <h3 class="blue-text">Jeikell Bernal</h3>
+          <p>Ejecutivo de ventas</p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="member">
+          <img class="img-team" src="./img/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="">
+          <h3 class="blue-text">Piero Bernal</h3>
+          <p>Ejecutivo de ventas</p>
+        </div>
+        <div class="member">
+          <img class="img-team" src="./img/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="">
+          <h3 class="blue-text">Mijail Eleazar</h3>
+          <p>Diseño</p>
+        </div>
+      </div>
+
     </section>
 
     <!-- SECCIÓN CLIENTES -->
@@ -175,11 +223,6 @@ adipiscing elit, sed do eiusmod tempor</p>
                   <img src="./img/CANDELA.png" alt="">
                 </div>
               </div>
-              <div class="col">
-                <div class=" py-4 text-white text-center">
-                  <img src="./img/ECOMMODITIES.png" alt="">
-                </div>
-              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -194,6 +237,11 @@ adipiscing elit, sed do eiusmod tempor</p>
                   <img src="./img/IDESI.png" alt="">
                 </div>
               </div>
+              <div class="col">
+                <div class=" py-4 text-white text-center">
+                  <img src="./img/ROEMMERS.png" alt="">
+                </div>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
@@ -201,6 +249,11 @@ adipiscing elit, sed do eiusmod tempor</p>
               <div class="col">
                 <div class=" py-4 text-white text-center">
                   <img src="./img/ILUMI.png" alt="">
+                </div>
+              </div>
+              <div class="col">
+                <div class=" py-4 text-white text-center">
+                  <img src="./img/ECOMMODITIES.png" alt="">
                 </div>
               </div>
               <div class="col">
@@ -220,11 +273,6 @@ adipiscing elit, sed do eiusmod tempor</p>
               <div class="col">
                 <div class=" py-4 text-white text-center">
                   <img src="./img/NEWMONT.png" alt="">
-                </div>
-              </div>
-              <div class="col">
-                <div class=" py-4 text-white text-center">
-                  <img src="./img/ROEMMERS.png" alt="">
                 </div>
               </div>
             </div>
@@ -261,7 +309,7 @@ adipiscing elit, sed do eiusmod tempor</p>
 
     <!-- SECCIÓN CONTACTO -->
 
-    <section class="contacto">
+    <section class="contacto" id="contacto">
       <article class="contacto__formulario">
         <h2>Contactenos</h2>
         <form class="formulario " action="">
