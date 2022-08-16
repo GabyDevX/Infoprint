@@ -1,0 +1,118 @@
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  &__formulario {
+    width: 40%;
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 90%;
+
+      input {
+        border-color: $principal-color;
+      }
+
+      .contenedor-inputs {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        input {
+          width: 50%;
+        }
+      }
+
+      .btn {
+        width: 80px;
+        align-self: flex-end;
+        background-color: $principal-color;
+      }
+
+      textarea {
+        resize: none;
+        border-color: $principal-color;
+      }
+    }
+  }
+
+  &__datos {
+    width: 30%;
+
+    .contacto__separador {
+      //   border: 2px solid $principal-color;
+      background: rgba(6, 131, 183, 1);
+      height: 2px;
+      width: 100%;
+    }
+
+    p {
+      width: 70%;
+    }
+
+    .redes {
+      gap: 10px;
+      display: flex;
+      padding-left: 0;
+
+      .fa-brands {
+        font-size: 2rem;
+        color: $principal-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__formulario {
+      width: 80%;
+
+      .formulario {
+        gap: 1rem;
+      }
+    }
+    &__datos {
+      margin-top: 1rem;
+      display: flex;
+      width: 90%;
+      .redes {
+        display: none;
+      }
+      & p {
+        width: 100%;
+      }
+      & h2 {
+        font-size: 1.5rem;
+      }
+      .contacto__separador {
+        height: 100px;
+        width: 2px;
+        margin: 0 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contacto__datos {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    .contacto__separador {
+      height: 2px;
+      width: 100%;
+    }
+  }
+}
