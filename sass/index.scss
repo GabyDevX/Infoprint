@@ -52,6 +52,16 @@ a {
   }
 }
 
+.carousel-item img {
+  width: 40% !important;
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-inner {
+    height: 150px;
+  }
+}
+
 /* MODAL */
 .modal-container {
   display: flex;
@@ -68,10 +78,10 @@ a {
   width: 100vw;
   transition: opacity 0.3s ease;
 }
-.box{
+.box {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   background-color: white;
   color: white;
   max-width: 35rem;
@@ -87,19 +97,20 @@ a {
   pointer-events: auto;
   opacity: 1;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
   filter: invert(108%);
 }
-.nombre-producto{
+.nombre-producto {
   color: black;
   text-align: center;
 }
-.button-close{
+.button-close {
   background-color: transparent;
   border: none;
   width: max-content;
-  align-self:flex-end;
+  align-self: flex-end;
 }
-.fa-solid{
+.fa-solid {
   font-size: 20px;
 }

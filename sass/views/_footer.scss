@@ -33,7 +33,7 @@ footer {
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      width: 40%;
+      width: auto;
       gap: 20px;
     }
     .fa-brands {
@@ -45,12 +45,16 @@ footer {
 
 @media screen and (max-width: 576px) {
   .mobile-none {
-    display: none;
+    display: none !important;
+    width: 0px !important;
   }
   footer {
+    justify-content: space-between;
     align-items: center;
     height: auto;
     gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
     .footer-map {
       .footer-brand {
         width: auto;
