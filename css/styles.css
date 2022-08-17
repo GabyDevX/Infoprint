@@ -409,11 +409,11 @@ a {
   .clientes__titulo h2 {
     font-weight: bold; }
 
-.carousel-item img {
+.clientes .carousel-item img {
   width: 40% !important; }
 
 @media screen and (max-width: 576px) {
-  .carousel-inner {
+  .clientes .carousel-inner {
     height: 150px; } }
 
 /* MODAL */
