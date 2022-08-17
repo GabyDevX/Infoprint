@@ -28,9 +28,9 @@
       background-color: transparent;
       border: none;
       font-weight: bold;
-      .conozca-mas{
+      .conozca-mas {
         color: black;
-        &:hover{
+        &:hover {
           text-decoration: none;
         }
       }
@@ -148,6 +148,22 @@
       & img {
         height: 30%;
         width: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .nosotros__texto ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros {
+    &__iconos {
+      height: auto;
+      width: 100%;
+      & img {
+        height: auto;
+        width: 30%;
       }
     }
   }

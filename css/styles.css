@@ -124,6 +124,17 @@
       height: 30%;
       width: auto; } }
 
+@media screen and (max-width: 400px) {
+  .nosotros__texto ul {
+    flex-direction: column;
+    align-items: center; }
+  .nosotros__iconos {
+    height: auto;
+    width: 100%; }
+    .nosotros__iconos img {
+      height: auto;
+      width: 30%; } }
+
 .servicios {
   padding: 2rem;
   display: flex;
@@ -131,7 +142,7 @@
   align-items: stretch; }
   .servicios__card {
     width: 30%;
-    height: 500px; }
+    height: 600px; }
   .servicios--right {
     align-self: flex-end;
     background-color: transparent;
@@ -206,9 +217,7 @@
 
 @media screen and (max-width: 992px) {
   .servicios h2 {
-    font-size: 1.5rem; }
-  .servicios__card {
-    height: 400px; } }
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 900px) {
   .servicios p {
@@ -232,7 +241,7 @@
     gap: 1rem;
     align-items: center; }
     .servicios__card {
-      height: 300px;
+      height: 400px;
       width: 60%; }
     .servicios__descripcion {
       display: none; }
@@ -240,6 +249,10 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between; } }
+
+@media screen and (max-width: 400px) {
+  .servicios__card {
+    width: 90%; } }
 
 .contacto {
   display: flex;
