@@ -25,6 +25,15 @@
     padding-top: 2rem;
     &--right {
       float: right;
+      background-color: transparent;
+      border: none;
+      font-weight: bold;
+      .conozca-mas{
+        color: black;
+        &:hover{
+          text-decoration: none;
+        }
+      }
     }
 
     & ul {

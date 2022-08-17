@@ -9,6 +9,13 @@
   }
   &--right {
     align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+  }
+  &__title{
+    font-weight: bold;
+    color: black;
   }
   &__img1 {
     height: 50%;
