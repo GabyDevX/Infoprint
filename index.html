@@ -76,14 +76,14 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        <a target="_blank" href="#">
-        <div class="hero__whatsapp">
-          <!-- <picture> -->
+        <a target="_blank" href="https://wa.me/51962225332">
+          <div class="hero__whatsapp">
+            <!-- <picture> -->
             <!-- <source media="(max-width:576px)"  href="#" srcset="img/WhatsApp.png"> -->
             <img src="img/Whatsapp-lg.png" class="ws-logo" alt="">
-          <!-- </picture> -->
-        </div>
-      </a>
+            <!-- </picture> -->
+          </div>
+        </a>
       </div>
     </section>
     <div class="separadorHero"></div>
@@ -139,7 +139,7 @@
         <div class="servicios__text1">
           <h2 class="servicios__title">IMPRESIÓN DIGITAL</h2>
           <p>Usado para imprimir cantidades pequeñas, pero
-muy práctico y rápido para plasmar los trabajos en diferentes superficies.</p>
+            muy práctico y rápido para plasmar los trabajos en diferentes superficies.</p>
           <button class="servicios--right" id="boton-impresionD">Ver Trabajos > </button>
         </div>
         <div id="modal_container-impresionD" class="modal-container">
@@ -156,8 +156,8 @@ muy práctico y rápido para plasmar los trabajos en diferentes superficies.</p>
         <div class="servicios__text2">
           <h2 class="servicios__title">IMPRESIÓN OFFSET</h2>
           <p>Usado para imprimir grandes volúmenes
-de papel y tener los colores deseados, mediante tinta y una plancha
-metálica podemos reproducir los textos e imágenes en papel.</p>
+            de papel y tener los colores deseados, mediante tinta y una plancha
+            metálica podemos reproducir los textos e imágenes en papel.</p>
           <button class="servicios--right" id="boton-impresionO">Ver Trabajos > </button>
         </div>
         <div id="modal_container-impresionO" class="modal-container">
@@ -200,8 +200,8 @@ metálica podemos reproducir los textos e imágenes en papel.</p>
         <div class="servicios__text3">
           <h2 class="servicios__title">MERCHANDISING</h2>
           <p>Podemos imprimir tu marca en diferentes productos o regalos
-para que puedas estimular la recordación de marca y estimular la compra
-en los puntos de venta.</p>
+            para que puedas estimular la recordación de marca y estimular la compra
+            en los puntos de venta.</p>
           <button class="servicios--right" id="boton-merch">Ver Trabajos > </button>
         </div>
         <div id="modal_container-merch" class="modal-container">
@@ -268,7 +268,7 @@ en los puntos de venta.</p>
       <h2 class="bold-text">Equipo</h2>
       <div class="team-members">
         <div class="member">
-          <img src="./img/JeikellBernal.png  "alt="Jeikell Bernal - Gerente comercial">
+          <img src="./img/JeikellBernal.png  " alt="Jeikell Bernal - Gerente comercial">
           <h3 class="blue-text">Jeikell Bernal</h3>
           <p> Gerente comercial</p>
         </div>
@@ -384,36 +384,41 @@ en los puntos de venta.</p>
     <section class="contacto" id="contacto">
       <article class="contacto__formulario">
         <h2>Contactenos</h2>
-        <form class="formulario " action="">
-          <input class="form-control" type="text" name="nombre" placeholder="Nombre" id="" />
+        <form class="formulario" id="form" action="">
+          <input class="form-control" type="text" name="nombre" placeholder="Nombre" id="" required />
           <div class="contenedor-inputs">
-            <input class="form-control" type="email" name="correo" placeholder="Correo" id="" />
-            <input class="form-control" type="text" name="telefono" placeholder="Telefono" id="" />
+            <input class="form-control" type="email" name="correo" placeholder="Correo" id="" required />
+            <input class="form-control" type="text" name="telefono" placeholder="Telefono" id="" required />
           </div>
-          <textarea class="form-control" name="mensaje" placeholder="Mensaje" name="mensaje" id="" cols="30"
-            rows="10"></textarea>
-          <button class="btn btn-primary" type="submit">Enviar</button>
+          <textarea class="form-control" name="mensaje" placeholder="Mensaje" name="mensaje" id="" cols="30" rows="10"
+            required></textarea>
+          <input class="btn btn-primary" type="submit" id="button" value="Enviar">
         </form>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+          emailjs.init('q8LkfKz0SUEnsl7c6')
+        </script>
       </article>
       <article class="contacto__datos">
         <div class="contacto__dato">
-          
+
           <h2>Dirección</h2>
           <p>
             Jirón las Magnolias 547, Villa María del Triunfo.
           </p>
         </div>
         <div class="contacto__separador">
-      </div>
+        </div>
         <div class="contacto__dato">
 
-        <h2>Teléfonos</h2>
-        <p>
-          962 225 332
-        </p>
-      </div>
+          <h2>Teléfonos</h2>
+          <p>
+            962 225 332
+          </p>
+        </div>
         <div class="contacto__separador">
-    </div>
+        </div>
         <div class="contacto__dato">
 
           <h2>Correo</h2>
@@ -426,16 +431,16 @@ en los puntos de venta.</p>
           <h2>Redes</h2>
           <ul class="redes">
             <li>
-              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/company/infoprintservices/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </li>
-          <li>
-            <i class="fa-brands fa-square-facebook"></i>
-          </li>
-          <li>
-            <i class="fa-brands fa-square-instagram"></i>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <i class="fa-brands fa-square-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-square-instagram"></i>
+            </li>
+          </ul>
+        </div>
       </article>
     </section>
   </main>

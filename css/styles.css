@@ -390,7 +390,7 @@ a {
 
 .hero__whatsapp {
   display: block;
-  position: absolute;
+  position: fixed;
   height: auto;
   width: 15%;
   right: 4rem;
