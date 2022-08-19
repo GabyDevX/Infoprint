@@ -18,18 +18,13 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/LOGO.png" alt="" />
-        </a>
+        <img src="./img/LOGO.png" alt="" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
@@ -145,8 +140,33 @@
         <div id="modal_container-impresionD" class="modal-container">
           <div>
             <div class="box">
-              <h1>Hola desde impresionD</h1>
-              <button type="submit" id="close-impresionD">Registrarme</button>
+              <button id="close-impresionD" class="button-close"><i class="fa-solid fa-circle-xmark"></i></button>
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/impresionD/Formatería.jpg" class="d-block w-100" alt="Formatería">
+                    <h5 class="nombre-producto">Formatería</h5>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/impresionD/Otros-formatos.png" class="d-block w-100" alt="Otros formatos">
+                    <h5 class="nombre-producto">Otros formatos</h5>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/impresionD/Prueba-color.png" class="d-block w-100" alt="Pruebas de colores">
+                    <h5 class="nombre-producto">Pruebas de colores</h5>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -208,31 +228,27 @@
           <div>
             <div class="box">
               <button id="close-merch" class="button-close"><i class="fa-solid fa-circle-xmark"></i></button>
-              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/merch/Libretas 1.png" class="d-block w-100" alt="Libretas">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/merch/Bolsa.png" class="d-block w-100" alt="Bolsas">
+                    <h5 class="nombre-producto">Bolsas</h5>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/merch/Libretas.png" class="d-block w-100" alt="Libretas">
                     <h5 class="nombre-producto">Libretas</h5>
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/merch//Bolsa.png" class="d-block w-100" alt="Bolsas">
-                    <h5 class="nombre-producto"> Bolsas </h5>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/merch/Tazas sublimadas.png" class="d-block w-100" alt="Tazas sublimadas">
+                    <img src="./img/merch/Tazas-sublimadas.png" class="d-block w-100" alt="Tazas sublimadas">
                     <h5 class="nombre-producto">Tazas sublimadas</h5>
                   </div>
-                  <div class="carousel-item">
-                    <img src="./img/merch/Llaveros.jpg" class="d-block w-100" alt="Llaveros">
-                    <h5 class="nombre-producto">Llaveros</h5>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                   data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                   data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
@@ -431,13 +447,8 @@
           <h2>Redes</h2>
           <ul class="redes">
             <li>
-              <a href="https://www.linkedin.com/company/infoprintservices/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-facebook"></i>
-            </li>
-            <li>
-              <i class="fa-brands fa-square-instagram"></i>
+              <a href="https://www.linkedin.com/company/infoprintservices/" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i></a>
             </li>
           </ul>
         </div>
@@ -449,22 +460,17 @@
       <img class="footer-brand" src="./img/LOGO-BLANCO.png" alt="infoPrint" />
       <ul class="footer-links mobile-none">
         <li class="mobile-none"><a href="#">Inicio</a></li>
-        <li class="mobile-none"><a href="#">Nosotros</a></li>
-        <li class="mobile-none"><a href="#">Servicios</a></li>
-        <li class="mobile-none"><a href="#">Contacto</a></li>
+        <li class="mobile-none"><a href="#nosotros">Nosotros</a></li>
+        <li class="mobile-none"><a href="#servicios">Servicios</a></li>
+        <li class="mobile-none"><a href="#contacto">Contacto</a></li>
       </ul>
       <ul>
     </div>
     <div class="footer-redes">
       <ul>
         <li>
-          <i class="fa-brands fa-linkedin"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-square-facebook"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-square-instagram"></i>
+          <a href="https://www.linkedin.com/company/infoprintservices/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
         </li>
       </ul>
     </div>

@@ -82,13 +82,6 @@ a {
 .clientes .carousel-item img {
   width: 40% !important;
 }
-
-@media screen and (max-width: 576px) {
-  .clientes .carousel-inner {
-    height: 150px;
-  }
-}
-
 /* MODAL */
 .modal-container {
   display: flex;
@@ -145,3 +138,13 @@ a {
 .team {
   padding: 1rem;
 }
+
+@media screen and (max-width: 576px) {
+  .clientes .carousel-inner {
+    height: 150px;
+  }
+  .box{
+    padding: 1rem;
+  }
+}
+

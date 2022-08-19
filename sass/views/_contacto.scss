@@ -61,6 +61,7 @@
     .redes {
       gap: 10px;
       display: flex;
+      flex-direction: column;
       padding-left: 0;
 
       .fa-brands {

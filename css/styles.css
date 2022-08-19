@@ -294,6 +294,7 @@
     .contacto__datos .redes {
       gap: 10px;
       display: flex;
+      flex-direction: column;
       padding-left: 0; }
       .contacto__datos .redes .fa-brands {
         font-size: 2rem;
@@ -369,6 +370,7 @@ footer {
     display: none !important;
     width: 0px !important; }
   footer {
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -433,10 +435,6 @@ a {
 .clientes .carousel-item img {
   width: 40% !important; }
 
-@media screen and (max-width: 576px) {
-  .clientes .carousel-inner {
-    height: 150px; } }
-
 /* MODAL */
 .modal-container {
   display: flex;
@@ -491,3 +489,9 @@ a {
 
 .team {
   padding: 1rem; }
+
+@media screen and (max-width: 576px) {
+  .clientes .carousel-inner {
+    height: 150px; }
+  .box {
+    padding: 1rem; } }

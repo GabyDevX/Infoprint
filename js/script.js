@@ -36,9 +36,7 @@ const mostrarModalMerch = () => {
   })
 }
 
-mostrarModalImpresionD()
-mostrarModalImpresionO()
-mostrarModalMerch()
+
 
 const btn = document.getElementById('button')
 
@@ -66,3 +64,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
     },
   )
 })
+
+mostrarModalImpresionD()
+mostrarModalImpresionO()
+mostrarModalMerch()
